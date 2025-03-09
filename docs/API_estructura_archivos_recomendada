@@ -1,0 +1,44 @@
+my_fastapi_project/
+│── app/
+│── tests/
+│── docs/                 # Documentación del proyecto
+│   ├── index.md
+│   ├── architecture.md
+│   ├── api_reference.md
+│── data/                 # Datos de ejemplo o producción
+│   ├── users.json
+│   ├── items.csv
+│── alembic/versions/     # Migraciones de BD
+│── static/               # Archivos estáticos (opcional)
+│── .env                  # Variables de entorno
+│── README.md             # Descripción del proyecto
+│── CHANGELOG.md          # Registro de cambios
+│── CONTRIBUTING.md       # Guía para contribuciones
+│── SECURITY.md           # Pautas de seguridad
+│── LICENSE               # Licencia del proyecto
+
+
+--------------------------------------------------------------------------------
+
+project/
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── core/
+│   │   └── config.py
+│   ├── api/
+│   │   ├── __init__.py
+│   │   └── v1/
+│   │       ├── __init__.py
+│   │       └── endpoints/
+│   │           ├── __init__.py
+│   │           └── calculator.py
+│   ├── models/
+│   │   └── __init__.py
+│   ├── schemas/
+│   │   └── __init__.py
+│   └── tests/
+│       └── test_calculator.py
+├── .env
+├── .gitignore
+└── requirements.txt

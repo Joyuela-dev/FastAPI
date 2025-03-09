@@ -1,0 +1,15 @@
+python -m venv venv             #crea el entorno virtual.
+
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser #Corre PS como administrador y cambiar la directiva para correr scripts
+.\venv\Scripts\Activate.ps1     #activa el entorno virtual en powershell
+
+pip freeze > requirements.txt
+
+#pipreqs es una herramienta que analiza tu código fuente para identificar las dependencias utilizadas y genera el archivo requirements.txt en función de ellas.
+pip install pipreqs
+pipreqs .
+
+pip install -r requirements.txt
+
+git rm -r --cached **/__pycache__/
+
