@@ -1,3 +1,4 @@
+import uvicorn
 from fastapi import FastAPI, HTTPException
 
 app = FastAPI()
@@ -23,3 +24,7 @@ def dividir(a: float, b: float):
     if b == 0:
         raise HTTPException(status_code=400, detail="No se puede dividir por cero")
     return {"resultado": a / b}
+
+if __name__ == "__main__":
+    print("Iniciando servidor...")   
+    uvicorn.run("calculator.main:app", host="127.0.0.1", port=8000, reload=True)
