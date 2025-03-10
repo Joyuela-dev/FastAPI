@@ -1,6 +1,6 @@
-##API Calculadora basica
+## API Calculadora basica
 
-#Ejecutar la aplicacion.
+# Ejecutar la aplicacion.
 
 Desde la linea de comandos digite:
 python -m calculator.main
