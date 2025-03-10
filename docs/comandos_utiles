@@ -13,3 +13,4 @@ pip install -r requirements.txt
 
 git rm -r --cached **/__pycache__/
 
+https://fastapi-p6dc.onrender.com/docs  # Render pagina
